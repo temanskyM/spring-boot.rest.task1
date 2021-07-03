@@ -1,12 +1,15 @@
 ### good
-GET http://localhost:8080/authorize?user=user2&password=password2
+GET http://localhost/authorize?user=user2&password=password2
 ### good
-GET http://localhost:8080/authorize?user=user3&password=password3
+GET http://localhost/authorize?user=user3&password=password3
 
 ### 400
-GET http://localhost:8080/authorize?user=user2&password=password3
+GET http://localhost/authorize?user=user2&password=password3
 ### 400
-GET http://localhost:8080/authorize?user=&password=
+GET http://localhost/authorize?user=&password=
 
 ### 401
-GET http://localhost:8080/authorize?user=user1&password=password1
+GET http://localhost/authorize?user=user1&password=password1
+
+###
+GET http://localhost/signin/
